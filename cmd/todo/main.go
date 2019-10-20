@@ -25,7 +25,7 @@ func init() {
 	// init use case interacter
 	todoInteracter = interacter.NewTodoIntercter(&repository.InMemoryTodoContent{}, &repository.InMemoryTag{})
 
-    // parse input command(determine one use case).
+	// parse input command(determine one use case).
 	flag.StringVar(&sub, "sub", "usage", "sub cmd to run usecase")
 	flag.Parse()
 

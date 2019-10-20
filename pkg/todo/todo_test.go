@@ -8,7 +8,6 @@ import (
 var (
 	cur = time.Now()
 	due = cur.Add(time.Second * 10)
-
 )
 
 func TestNew(t *testing.T) {
@@ -21,7 +20,7 @@ func TestNew(t *testing.T) {
 		false,
 	}
 	if *todo != *expected {
-		t.Errorf("Not matched: \n%v\n%v\n",todo, expected)
+		t.Errorf("Not matched: \n%v\n%v\n", todo, expected)
 	}
 }
 
@@ -36,6 +35,6 @@ func TestTodo_Done(t *testing.T) {
 		true,
 	}
 	if *todo != *expected {
-		t.Errorf("Not matched: \n%v\n%v\n",todo, expected)
+		t.Errorf("Not matched: \n%v\n%v\n", todo, expected)
 	}
 }
